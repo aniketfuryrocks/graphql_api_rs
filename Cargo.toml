@@ -1,0 +1,22 @@
+[package]
+name = "graphql_api_rs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+cors = ["actix-cors"]
+
+[dependencies]
+mongodb = "2.2.2"
+tokio = "1.19.2"
+anyhow = "1.0.58"
+actix-web = "4.1.0"
+async-graphql = "4.0.4"
+async-graphql-actix-web = "4.0.4"
+actix-cors = { version = "0.6.1", optional = true }
+serde = { version = "1.0.137", features = ["derive"] }
+actix-web-httpauth = "0.8.0"
+chrono = { version = "0.4.19", features = ["serde"] }
+jsonwebtoken = "8.1.1"
+
+

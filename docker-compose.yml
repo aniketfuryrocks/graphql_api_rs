@@ -1,0 +1,16 @@
+volumes:
+  mongo_data:
+
+services:
+  app:
+    ports:
+      - 8080:8080
+
+  mongo:
+    image: docker.io/library/mongo
+    restart: always
+    volumes:
+      - mongo_data:/data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example

@@ -1,0 +1,3 @@
+[submodule "jwt"]
+	path = jwt
+	url = https://github.com/joinblob/jwt
