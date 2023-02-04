@@ -8,7 +8,7 @@ cors = ["actix-cors"]
 
 [dependencies]
 mongodb = "2.2.2"
-tokio = "1.19.2"
+tokio = "1.20.4"
 anyhow = "1.0.58"
 actix-web = "4.1.0"
 async-graphql = "4.0.4"
